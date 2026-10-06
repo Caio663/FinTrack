@@ -1,0 +1,9 @@
+.root-pane { -fx-background-color: #f5f7fb; }
+.header { -fx-padding: 28 42 24 42; -fx-background-color: linear-gradient(to right, #12263f, #1d4e89); }
+.app-title { -fx-text-fill: white; -fx-font-size: 28px; -fx-font-weight: bold; }
+.subtitle, .muted { -fx-text-fill: #68758a; }.header .subtitle { -fx-text-fill: #d8e6f7; }
+.content { -fx-padding: 28 42 28 42; }.dialog-content { -fx-padding: 26; -fx-background-color: #f9fbff; }
+.summary-card { -fx-padding: 18; -fx-spacing: 7; -fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, #d7deea, 8, 0.15, 0, 2); -fx-pref-width: 210; }
+.card-caption { -fx-text-fill: #65748a; -fx-font-size: 11px; -fx-font-weight: bold; }.balance { -fx-text-fill: #142b4a; -fx-font-size: 21px; -fx-font-weight: bold; }.income { -fx-text-fill: #16834a; -fx-font-size: 16px; -fx-font-weight: bold; }.expense { -fx-text-fill: #c43a42; -fx-font-size: 16px; -fx-font-weight: bold; }.section-title { -fx-text-fill: #172a45; -fx-font-size: 19px; -fx-font-weight: bold; }
+.button { -fx-cursor: hand; }.primary-button { -fx-background-color: #1967b3; -fx-text-fill: white; -fx-font-weight: bold; }.danger-button { -fx-background-color: #fff0f1; -fx-text-fill: #a9232a; }
+.table-view { -fx-background-radius: 8; -fx-border-color: #e0e6ef; -fx-border-radius: 8; }.table-view .column-header { -fx-background-color: #eaf1f9; }

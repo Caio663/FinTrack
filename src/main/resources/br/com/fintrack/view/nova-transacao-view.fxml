@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fintrack.controller.NovaTransacaoController" spacing="14" styleClass="dialog-content">
+    <Label text="Novo lançamento" styleClass="section-title"/><Label text="Preencha os dados da sua receita ou despesa." styleClass="muted"/>
+    <GridPane hgap="12" vgap="10"><columnConstraints><ColumnConstraints minWidth="105"/><ColumnConstraints hgrow="ALWAYS"/></columnConstraints>
+        <Label text="Descrição" GridPane.rowIndex="0"/><TextField fx:id="descricaoField" promptText="Ex.: Mercado" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Valor" GridPane.rowIndex="1"/><TextField fx:id="valorField" promptText="0,00" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Tipo" GridPane.rowIndex="2"/><ComboBox fx:id="tipoCombo" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="Data" GridPane.rowIndex="3"/><DatePicker fx:id="dataPicker" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Observação" GridPane.rowIndex="4"/><TextArea fx:id="observacaoArea" promptText="Opcional" prefRowCount="3" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    </GridPane>
+    <CheckBox fx:id="recorrenteCheck" text="Marcar como lançamento recorrente"/><Label fx:id="mensagemLabel" wrapText="true" styleClass="muted"/>
+    <HBox alignment="CENTER_RIGHT" spacing="10"><Button text="Cancelar" onAction="#cancelar"/><Button text="Salvar transação" styleClass="primary-button" onAction="#salvar"/></HBox>
+</VBox>

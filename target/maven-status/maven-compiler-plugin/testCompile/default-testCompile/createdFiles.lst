@@ -1,0 +1,3 @@
+br\com\fintrack\model\TransacaoTest.class
+br\com\fintrack\dao\TransacaoDAOTest.class
+br\com\fintrack\service\RepositorioGenericoTest.class

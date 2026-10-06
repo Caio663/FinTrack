@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fintrack.controller.RelatorioController" spacing="16" styleClass="dialog-content">
+    <Label text="Relatório financeiro" styleClass="section-title"/><Label text="Visão consolidada de todos os lançamentos." styleClass="muted"/>
+    <GridPane hgap="20" vgap="14"><Label text="Total de receitas" GridPane.rowIndex="0"/><Label fx:id="receitasLabel" styleClass="income" GridPane.columnIndex="1" GridPane.rowIndex="0"/><Label text="Total de despesas" GridPane.rowIndex="1"/><Label fx:id="despesasLabel" styleClass="expense" GridPane.columnIndex="1" GridPane.rowIndex="1"/><Label text="Saldo consolidado" GridPane.rowIndex="2"/><Label fx:id="saldoLabel" styleClass="balance" GridPane.columnIndex="1" GridPane.rowIndex="2"/></GridPane>
+    <Label fx:id="quantidadeLabel" styleClass="muted"/><Button text="Atualizar relatório" onAction="#atualizar"/>
+</VBox>

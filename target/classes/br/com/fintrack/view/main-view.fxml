@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fintrack.controller.MainController" styleClass="root-pane">
+    <top><VBox styleClass="header"><Label text="FinTrack" styleClass="app-title"/><Label text="Acompanhe sua vida financeira com clareza." styleClass="subtitle"/></VBox></top>
+    <center><VBox spacing="18" styleClass="content">
+        <HBox spacing="14"><VBox styleClass="summary-card"><Label text="SALDO ATUAL" styleClass="card-caption"/><Label fx:id="saldoLabel" styleClass="balance"/></VBox><VBox styleClass="summary-card"><Label text="RECEITAS" styleClass="card-caption"/><Label fx:id="receitasLabel" styleClass="income"/></VBox><VBox styleClass="summary-card"><Label text="DESPESAS" styleClass="card-caption"/><Label fx:id="despesasLabel" styleClass="expense"/></VBox></HBox>
+        <HBox alignment="CENTER_LEFT" spacing="10"><Label text="Transações" styleClass="section-title"/><Pane HBox.hgrow="ALWAYS"/><Button text="Atualizar" onAction="#atualizarDados"/><Button text="Relatório" onAction="#abrirRelatorio"/><Button text="+ Nova transação" styleClass="primary-button" onAction="#abrirNovaTransacao"/></HBox>
+        <TableView fx:id="tabelaTransacoes" VBox.vgrow="ALWAYS"><columns><TableColumn fx:id="colunaData" text="Data" prefWidth="135"/><TableColumn fx:id="colunaDescricao" text="Descrição" prefWidth="400"/><TableColumn fx:id="colunaValor" text="Valor" prefWidth="160"/><TableColumn fx:id="colunaTipo" text="Tipo" prefWidth="140"/></columns><placeholder><Label text="Nenhuma transação cadastrada."/></placeholder></TableView>
+        <HBox spacing="12" alignment="CENTER_LEFT"><Button text="Excluir selecionada" styleClass="danger-button" onAction="#excluirSelecionada"/><Label fx:id="statusLabel" styleClass="muted"/></HBox>
+    </VBox></center>
+</BorderPane>
